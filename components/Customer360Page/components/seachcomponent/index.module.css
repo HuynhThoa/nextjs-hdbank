@@ -1,0 +1,298 @@
+
+  .div_body{
+    display: flex;
+
+    
+
+}
+.input{
+  /* box-sizing: border-box; */
+
+/* Auto layout */
+
+/* display: flex;
+flex-direction: column;
+align-items: flex-start; */
+/* padding: 0px 12px; */
+/* isolation: isolate; */
+
+width: 400px;
+height: 44px;
+
+/* Light/Other/Outlined Border (23p)
+
+Border style for outlined variant components in resting state (Text Field, Select, Chips, etc)
+*/
+/* border: 1px solid rgba(0, 0, 0, 0.23); */
+/* border-radius: 4px; */
+
+/* Inside auto layout */
+
+/* flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0; */
+}
+
+
+
+.button_qr{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 40px;
+left: 1520px;
+gap: 8px;
+
+position: absolute;
+width: 80px;
+height: 44px;
+right: 0px;
+top: 0px;
+
+background: linear-gradient(180deg, #FED740 0%, #FCA815 100%);
+box-shadow: 0px 4px 4px rgba(215, 101, 81, 0.2);
+border-radius: 6px;
+}
+
+.button_van_tay{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 40px;
+left: 1420px;
+gap: 8px;
+
+position: absolute;
+width: 80px;
+height: 44px;
+right: 96px;
+top: 0px;
+
+background: linear-gradient(180deg, #FFB580 0%, #F56600 100%);
+box-shadow: 0px 4px 4px rgba(169, 69, 0, 0.2);
+border-radius: 6px;
+}
+.listButton{
+  
+  
+}
+
+.button_seach{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 4px 10px 4px 12px;
+gap: 8px;
+margin-right: 500px;
+width: 131px;
+height: 44px;
+
+/* Brand/Yellow */
+
+background: #FFC20E;
+border-radius: 4px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+
+
+.section_message_in_form_infor{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px;
+  gap: 16px;
+  
+  width: 418px;
+  height: 40px;
+  
+  /* Green/0 */
+  
+  background: #F2FAE2;
+  border-radius: 8px;
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.p_data_soGTTT{
+  color: #1890FF;
+}
+
+.div_makh{
+  width: 59px;
+height: 19px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 19px;
+/* identical to box height, or 156% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Neutral/4 */
+
+color: #454F5B;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 8px;
+gap: 8px;
+
+width: 97px;
+height: 19px;
+
+/* Brand/Yellow */
+
+background: #FFC20E;
+border-radius: 4px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.div_actives{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px 8px;
+gap: 10px;
+
+width: 58px;
+height: 19px;
+
+/* Green/3 */
+
+background: #7DBA00;
+border-radius: 4px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+  
+
+/* Code - Medium -14pt */
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Mono/White */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.div_ad{
+  width: 28px;
+height: 24px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+text-decoration-line: underline;
+
+/* Blue/4 */
+
+color: #1890FF;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.div_seach{
+  width: 1762px;
+    height: 132px;
+    background-color: white;
+    border: 1px solid #D3D8DE;
+border-radius: 8px;
+}
+
+.h1_seach{
+  position: absolute;
+width: 257px;
+height: 48px;
+left: 24px;
+top: 1px;
+
+margin-bottom: 10px;
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 48px;
+/* identical to box height, or 200% */
+
+display: flex;
+align-items: center;
+
+/* Brand/Grey */
+
+color: #464646;
+}
+
+.form_seach{
+  display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+position: absolute;
+width: 1383px;
+height: 44px;
+left: 24px;
+top: 72px;
+
+}
