@@ -5,16 +5,27 @@ import { useRouter } from "next/router";
 import axios from "axios";
 import { blue, yellow } from "@mui/material/colors";
 import { TextField } from "@mui/material";
+import {handleSearchClick} from "pages/posts/service.js";
 
 export default function SearchCustomers(props) {
-  const {
-    setSearchValues,
-    searchValues,
-    setData,
-    handleSearchClick,
-    handleInputChange,
-  } = props;
+  
+ 
+   const {
+     setData,
+  // //   // setSearchValues,
+  // //   // searchValues,
+    data
+  // //    handleSearchClick,
+  // //  // handleInputChange,
+    } = props;
+  props = useState(props.data);
 
+   async function handleClick(event) {
+    event.preventDefault();
+    const newData =await handleSearchClick(event); 
+    setData(newData);
+    // Do something with responseData
+  }
   return (
     <div>
       <Head>
@@ -42,9 +53,9 @@ export default function SearchCustomers(props) {
                   id="filled-helperText"
                   label="Mã khách hàng"
                   size="small"
-                  name="id"
-                  value={props.code}
-                  onChange={handleInputChange}
+                  //name="id"
+                  //value={props.code}
+                  //onChange={handleInputChange}
                   inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
                 />
               </div>
@@ -54,9 +65,9 @@ export default function SearchCustomers(props) {
                   id="filled-helperText"
                   label="CMND/CCCD/MST"
                   size="small"
-                  name="cmnd"
-                  value={searchValues.cmnd}
-                  onChange={handleInputChange}
+                  //name="cmnd"
+                  //value={searchValues.cmnd}
+                  //onChange={handleInputChange}
                   inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
                 />
               </div>
@@ -66,9 +77,9 @@ export default function SearchCustomers(props) {
                   id="filled-helperText"
                   label="Số tài khoản"
                   size="small"
-                  name="accountNumber"
-                  value={searchValues.accountNumber}
-                  onChange={handleInputChange}
+                  //name="accountNumber"
+                  //value={searchValues.accountNumber}
+                 // onChange={handleInputChange}
                   inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
                 />
               </div>
@@ -77,7 +88,8 @@ export default function SearchCustomers(props) {
                   <button
                     type="submit"
                     class="btn btn-primary"
-                    onClick={handleSearchClick}
+                    onClick={handleClick}
+                    
                     className={styles.button_seach}
                   >
                     <img src="/thuho/asset/images/Vector.png"></img>
